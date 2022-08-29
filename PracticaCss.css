@@ -1,0 +1,106 @@
+/*hay dos tipos de medidad relativas REM y EM 
+solo se EXPLICA de EM   buscar informacion de REM
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*
+EMPEZANDO CON EM
+ 1 EM = 16 PIXELES por defecto
+ pero en este ejemplo definimos el tamaño que sera equivalente
+ 1 em= 6 px    por que la caja contenedora .tamaño-dinamico
+ le esta dando un valor de 6 
+  
+ ESTO FUNCIONA PARA CUALQUIER PROPIEDAD QUE TRABAJE CON UNIDADES DE MEDIDA
+ TODO LO QUE SE PUEDE MEDIR
+
+ */
+
+.tamaño-dinamico{
+    font-size: 6px;
+}
+.tamaño-dinamico__h2{
+    font-size: 4em;/*el tamaño*/
+    background-color: black;
+    /* el width hace referencia al ancho  50 vw  es que el 50% de la pantalla sera negra 
+    lo mismo con el heigth pero este hace referencia al alto*/
+    width:2vw;
+    height:2vh;
+}
+
+/*PROPIEDADES DE TEXTO*/
+.prueba-tipografia{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT',cursive, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+.prueba-tipografia__deElsub{
+    font-size: 2em;
+    font-family: Georgia;/*tipo de letra*/
+    line-height: 1.9;
+    font-weight: normal;/*grosor de la letra*/
+   
+    color: aqua;
+}
+.importado-fonts{
+    font-family: 'Hurricane', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+}
+
+/*para hacer que un elemento como h2 que es un elemento 
+en bloque es decir que completa  hasta el final de la pagina todo
+aunque no haya nada escrito  se comporte como un elemto en linea 
+que solo ocupa lo que esta escrito se utila "DISPLAY" */
+
+#pruebaBLOQUE{
+    display: inline;
+    font-size: 30px;
+}
+/*UN ELEMENTO EN BLOQUE  SE LE PUEDE PONER UN WIDTH Y UN 
+heigth pero a un elemento  en linea no  y eso se aplica 
+a un h2 cuando es cambiadoa un elemento en linea 
+es decir a un h2 no se le puede poner un width y un heigth
+*/
+
+/*PROPIEDADES DE CAJA*/
+h1{
+    font-size: 30px;
+    font-family: 'Hurricane', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+}
+
+
+
+#enbloque{
+    display: inline-block;/*para que se comporte como un elemento en linea pero pueda adquierir las propiedades en bloque*/
+    background-color: brown;
+    color: aliceblue;
+    padding: 10px 30px 50px 100px;/*el padding es para agregr un espacio entre la letra y el marco de la caja
+     en el orden que pusimos significa 10ps arriba 30 a la derecha 50 abajo y 100 izquierda
+     si solo pusieramos "10px y 20px" serian 10 ariiba y abajo y 20 derecha y izquierda
+     si solo ponemos 10ps todos los lados seran de 10 px si solo quisieramos añador arriba seria
+     poniendo top a la derecha rigth abajo botton a la izquierda left */
+     box-sizing: border-box;
+     
+     /*text-align: center;para centrar el texto de una caja al centro de la caja*/
+     
+     height: 100px;/*que significa alto*/
+     width: 200px;/*que seria ancho*/
+     margin: 30px;/*el margin es la distancia de una caja con las otras cajas se aplica lo mismo 
+     del padding*/
+     border-radius: 10px; /*para ver cuanto se va a redondear el radio*/ 
+     border: 10px outset blue; /*aca pone el tamaño del borde el estilo y el color*/
+     box-shadow: 5px 10px 20px 5px blue;/*es para la sombra de caja  "1px en el eje x, 2px en y
+     15 x tamaño del desenfoque 0px el borde que temdra y despues el color "*/
+    
+     /*transform: rotate(15deg); para rotar la caja contenedora 15 deg serian el grado de rotacion*/
+
+
+
+     
+}
